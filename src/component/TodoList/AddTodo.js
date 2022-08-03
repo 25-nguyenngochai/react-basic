@@ -7,6 +7,7 @@ function AddTodo(props) {
     const handleOnclickAddTodo = () => {
         if (!todoName) {
             toast.error("Missing required params!");
+            props.setOjbTodo();
             return;
         }
         props.addTodoList({
@@ -14,6 +15,7 @@ function AddTodo(props) {
             name: todoName,
         })
         setTodoName('');
+        props.setOjbTodo();
     }
 
     return (
