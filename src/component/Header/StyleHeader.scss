@@ -1,0 +1,62 @@
+.navbar{
+    .menu{
+        padding-left: 80px;
+        padding-top: 17px;
+        padding-bottom: 8px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2c3428;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            li {
+                float: left;
+            }
+            .App-logo {
+                height: 6vmin;
+                pointer-events: none;
+            }
+            .react {
+                color: white;
+                display: block;
+                padding-top: 2px;
+                padding-right: 20px;
+                font-size: 1.5rem;
+            }
+            .reacts{
+                color: white;
+                display: block;
+                padding: 8px 20px;
+                text-decoration: none;
+            }
+            .reacts:hover{
+                color: crimson;
+            }
+            .login{
+                color: white;
+                display: block;
+                padding: 8px 20px;
+                text-decoration: none;
+                margin-left: 700px;
+            }
+        }
+    }
+}
+.logo-header{
+    text-align: center;
+    margin: 0;
+    background-color: #343942;
+    height: 100vh;
+    .App-logos{
+        margin-top: 190px;
+        text-align: center !important;
+        height: 40vmin;
+        pointer-events: none;
+    }
+    h1{
+        color: white;
+    }
+}

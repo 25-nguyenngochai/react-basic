@@ -1,5 +1,12 @@
 .list-todo-container{
+    text-align: center;
+    h1{
+        margin: 0;
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
     .add-todo{
+        margin-bottom: 10px;
         button{
             cursor: pointer;
         }
@@ -12,10 +19,6 @@
             border-bottom: 1px grey solid;
             margin-top: 5px;
             margin-bottom: 10px;
-            &:first-child{
-                margin-top: 20px;
-                border-top: 1px solid grey;
-            }
             span{
                 font-size: 1.1rem;
                 margin-right: 10px;
@@ -23,6 +26,9 @@
             button{
                 cursor: pointer;
             }
+        }
+        button.btnHide {
+            margin-bottom: 40px;
         }
     }
 }

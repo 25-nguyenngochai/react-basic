@@ -1,19 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.scss';
-import ListTodo from './TodoList/ListTodo';
+import Navbar from './Header/Navbar';
 import { ToastContainer} from 'react-toastify';
+import { Outlet } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Simple Todo List Apps 
-        </p>
-        {/* <MyComponent/> */}
-        <ListTodo/>
+        <div className='navbar'>
+          <Navbar/>
+        </div>
+        <div className='outlet'>
+          <Outlet/>{/* nơi để cho thằng con đứng */}
+        </div>
       </header>
 
       <ToastContainer

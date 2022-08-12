@@ -56,11 +56,11 @@ function ListTodo() {
     const isEmtyList = Object.keys(listTodo).length === 0
     return(
         <div className="list-todo-container">
-            <div className="add-todo">
-                <AddTodo addTodoList = {(event) => addTodoList(event)} setOjbTodo = {() => setOjbTodo({})}/>
+            <h1>Simple Todo List Apps </h1>
+            <AddTodo addTodoList = {(event) => addTodoList(event)} setOjbTodo = {() => setOjbTodo({})}/>
+            <div className="list-todo-content">
                 <>{ showTodo === true ?
                     <button onClick={() => setShowTodo(!showTodo)}>Show Todo List</button> : <>
-                        <div className="list-todo-content">
                         {
                             listTodo.map((item, index) => {
                                 return (
@@ -84,10 +84,9 @@ function ListTodo() {
                                 )
                             })
                         }
-                        </div>
                     <>
                         { isEmtyList === false &&
-                            <button onClick={() => setShowTodo(!showTodo, setOjbTodo({}))}>Hide Todo List</button>
+                            <button className="btnHide" onClick={() => setShowTodo(!showTodo, setOjbTodo({}))}>Hide Todo List</button>
                         }
                     </>
                 </>}</>
